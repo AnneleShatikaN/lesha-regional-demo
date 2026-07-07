@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOD View — Lesha</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="hod">
+
+<header class="site-header" id="site-header"></header>
+<div class="breadcrumb-bar" id="breadcrumb-bar"></div>
+
+<main>
+  <div class="page-head">
+    <div>
+      <span class="page-head__eyebrow">HOD view</span>
+      <h1 id="hod-name">&nbsp;</h1>
+      <div class="page-head__meta">Head of Department, STEM</div>
+    </div>
+  </div>
+
+  <div class="stat-ledger" id="stat-ledger"></div>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Teachers in department</h2>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr><th>Teacher</th><th>Subject(s)</th><th>Avg AI score</th><th>Syllabus coverage</th></tr>
+      </thead>
+      <tbody id="teacher-rows"></tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Syllabus coverage &amp; weak areas by subject</h2>
+    </div>
+    <div class="card-grid card-grid--4" id="subject-cards"></div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Awaiting sign-off</h2>
+      <span class="section__hint">Approve or send back for revision</span>
+    </div>
+    <div id="pending-plans"></div>
+  </section>
+</main>
+
+<footer class="site-footer">Lesha &middot; HOD View</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

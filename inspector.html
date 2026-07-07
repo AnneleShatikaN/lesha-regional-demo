@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspector View — Lesha</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="inspector">
+
+<header class="site-header" id="site-header"></header>
+<div class="breadcrumb-bar" id="breadcrumb-bar"></div>
+
+<main>
+  <div class="page-head">
+    <div>
+      <span class="page-head__eyebrow">Inspector view</span>
+      <h1>Circuit A</h1>
+      <div class="page-head__meta">Comparing both schools in the circuit</div>
+    </div>
+  </div>
+
+  <div class="stat-ledger" id="stat-ledger"></div>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Schools in Circuit A</h2>
+      <span class="section__hint">Click a school to see department-level detail</span>
+    </div>
+    <div class="card-grid card-grid--2" id="school-cards"></div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Weak areas across the circuit</h2>
+    </div>
+    <div class="card-grid card-grid--4" id="circuit-weak-areas"></div>
+  </section>
+</main>
+
+<footer class="site-footer">Lesha &middot; Inspector View</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

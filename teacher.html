@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher View — Lesha</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="teacher">
+
+<header class="site-header" id="site-header"></header>
+<div class="breadcrumb-bar" id="breadcrumb-bar"></div>
+
+<main>
+  <div class="page-head">
+    <div>
+      <span class="page-head__eyebrow">Teacher view</span>
+      <h1 id="teacher-name">&nbsp;</h1>
+      <div class="page-head__meta" id="teacher-subjects"></div>
+    </div>
+    <a class="btn btn--primary" href="lesson-plan.html">Create Lesson Plan</a>
+  </div>
+
+  <div class="stat-ledger" id="stat-ledger"></div>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>My classes</h2>
+      <span class="section__hint">Click a class to see individual learners</span>
+    </div>
+    <div class="card-grid card-grid--2" id="classes"></div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Lesson plan history</h2>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr><th>Objective</th><th>Class</th><th>AI score</th><th>Status</th><th>Submitted</th></tr>
+      </thead>
+      <tbody id="lesson-plan-rows"></tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>CPD points</h2>
+    </div>
+    <div id="cpd-breakdown"></div>
+  </section>
+</main>
+
+<footer class="site-footer">Lesha &middot; Teacher View</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

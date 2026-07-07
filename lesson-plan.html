@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Lesson Plan — Lesha</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="lesson-plan">
+
+<header class="site-header" id="site-header"></header>
+<div class="breadcrumb-bar" id="breadcrumb-bar"></div>
+
+<main>
+  <div class="page-head">
+    <div>
+      <span class="page-head__eyebrow">New lesson plan</span>
+      <h1>Draft &amp; evaluate</h1>
+      <div class="page-head__meta">Choose a syllabus objective, describe your approach, then evaluate with AI before submitting to your HOD.</div>
+    </div>
+    <a class="btn btn--ghost" href="teacher.html">&larr; Back to my classes</a>
+  </div>
+
+  <div class="lp-layout">
+    <div class="card" style="padding:26px;">
+      <div class="field">
+        <label for="objective-select">Syllabus objective</label>
+        <select id="objective-select"></select>
+      </div>
+      <div class="field">
+        <label for="field-objectives">Learning objectives</label>
+        <textarea id="field-objectives"></textarea>
+      </div>
+      <div class="field">
+        <label for="field-approach">Teaching approach</label>
+        <textarea id="field-approach" placeholder="Describe how you'll introduce and teach this objective..."></textarea>
+      </div>
+      <div class="field">
+        <label for="field-examiner">Examiner expectations addressed</label>
+        <textarea id="field-examiner" placeholder="Which command words and mark-scheme patterns will learners practise?"></textarea>
+      </div>
+      <div class="field">
+        <label for="field-assessment">Formative assessment</label>
+        <textarea id="field-assessment" placeholder="How will you check understanding during the lesson?"></textarea>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn--primary" id="evaluate-btn">Evaluate with AI</button>
+      </div>
+    </div>
+
+    <div class="card score-panel">
+      <div id="score-placeholder" class="placeholder-note">
+        Your AI evaluation will appear here once you click <strong>Evaluate with AI</strong>.
+      </div>
+      <div id="score-panel" style="display:none;">
+        <div class="score-total">
+          <div class="score-total__value numeral" id="score-total-value">0</div>
+          <div class="score-total__label">Overall AI score</div>
+        </div>
+        <div id="score-bars"></div>
+        <div class="feedback-note" id="feedback-text"></div>
+        <div class="btn-row" style="margin-top:22px;">
+          <button class="btn btn--teal" id="submit-btn" disabled>Submit to HOD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Lesha &middot; Lesson Plan Evaluation</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
